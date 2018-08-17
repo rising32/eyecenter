@@ -1,0 +1,31 @@
+.main-footer {
+	background-color: @light-grey;
+}
+
+.main-footer__wrap {
+	.container;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 80px 100px 56px 100px;
+	justify-content: space-around;
+}
+
+.main-footer__logo-link {
+	text-decoration: none;
+	margin-bottom: 30px;
+	display: block;
+
+	&--eyewear {
+		opacity: 0.5;
+	}
+
+
+	@media @tablet {
+		margin-right: 25px;
+		&--eyewear {
+			margin-right: auto;
+		}
+	}
+}
+

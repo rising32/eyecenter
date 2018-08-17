@@ -1,0 +1,50 @@
+.brand-item__img-wrap {
+	width: 75vw;
+	height: 75vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.5;
+	border: solid 1px @black;
+	margin-bottom: 25px;
+	padding: 10px;
+
+	@media @mobile-l {
+		width: 44vw;
+		height: 44vw;
+	}
+
+	@media @tablet {
+		width: 23vw;
+		height: 23vw;
+	}
+
+	@media @laptop {
+		width: 240px;
+		height: 240px;
+	}
+
+	@media @laptop-l {
+		width: 270px;
+		height: 270px;
+	}
+}
+
+.brand-item__img-link {
+	.font__link;
+	font-size: 18px;
+	color: @puce;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&:hover {
+		color: @black;
+	}
+
+}
+
+
+.brand-item__img-link:hover .brand-item__img-wrap {
+	opacity: 1;
+}

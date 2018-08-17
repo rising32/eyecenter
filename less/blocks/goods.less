@@ -1,0 +1,34 @@
+.goods {
+	.container;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+
+}
+
+.goods__wrap-item {
+
+	@media @mobile-l {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	@media @laptop {
+		margin-bottom: 40px;
+	}
+}
+
+.goods__title {
+	.row-title;
+}
+
+.goods__badge {
+	.row-badge;
+}
+
+.goods {
+	margin-bottom: 100px;
+}
+

@@ -1,0 +1,55 @@
+.brands {
+	background-color: #e5e5e5;
+	position: relative;
+	margin-bottom: 100px;
+}
+
+.brands::before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 75px;
+	background-color: #fff;
+}
+
+.brands__wrap {
+	.container;
+	padding-bottom: 50px;
+	position: relative;
+
+	@media @mobile-l {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+
+
+	@media @laptop {
+		margin-bottom: 100px;
+		padding-bottom: 100px;
+	}
+
+	@media @laptop-l {
+		padding-top: 100px;
+	}
+
+}
+
+.brand-item {
+	margin-bottom: 40px;
+
+	@media @laptop {
+		margin-bottom: 0;
+	}
+}
+
+.brands__title {
+	.row-title;
+	transform: translateY(-45px);
+}
+
+.brands__badge {
+	.row-badge;
+	top: -75px;
+}

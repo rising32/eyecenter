@@ -1,0 +1,39 @@
+.main-header {
+	width: 100%;
+	padding-top: 70px;
+	background-color: @light-grey;
+	padding-bottom: 240px;
+
+}
+
+.main-header__container {
+	.container;
+
+}
+
+.main-header__wrap {
+	.container;
+}
+
+.main-header__top-line {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 100px;
+
+	@media @tablet {
+		margin-bottom: 140px;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	@media @laptop {
+		margin-bottom: 200px;
+		justify-content: space-between;
+	}
+
+}
+
+
